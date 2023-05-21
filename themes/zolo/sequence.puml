@@ -1,0 +1,9 @@
+@startuml
+!theme zolo
+Bob -> Alice :  schnitzel
+Alice -> Trudy: bread
+Alice <- Trudy: cheese
+Bob <- Alice :  bun
+Bob -x Alice :  broccoli
+Bob ->> Alice : tomato
+@enduml
