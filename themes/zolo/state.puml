@@ -1,0 +1,8 @@
+@startuml
+!theme zolo
+
+State1: blub
+State2: blah
+
+State1 --> State2
+@enduml

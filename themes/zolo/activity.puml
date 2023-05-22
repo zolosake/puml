@@ -1,6 +1,0 @@
-@startuml
-!theme zolo
-:Hello world;
-:This is defined on
-several **lines**;
-@enduml

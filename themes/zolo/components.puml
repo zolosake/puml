@@ -1,0 +1,12 @@
+@startuml
+!theme zolo
+
+[A Component] as A
+[B Component] as C
+[C Component]
+[D Component]
+component T
+T -- A
+A - C
+
+@enduml

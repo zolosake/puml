@@ -1,0 +1,60 @@
+@startuml
+!theme zolo
+skinparam componentStyle rectangle
+skinparam component {
+  FontSize 10
+}
+component Rate [
+  Stundenansatz
+  **CHF 140.00**
+]
+component Deductions [
+  Berufsauslagen
+  **CHF -35.00**
+
+  ..
+
+  AHV/IV/EO
+  **CHF -10.50**
+
+  ..
+
+  Reserven
+  **CHF -16.00**
+
+  ..
+
+  13. Monatslohn
+  **CHF  -3.50**
+
+  ..
+
+  Bezahlte Ferien
+  **CHF  -3.50**
+
+  ..
+
+  Vorsorge
+  **CHF -18.00**
+
+  ..
+
+  Indirekte
+  Arbeitsstunden
+  **CHF -16.50**
+]
+component Salary [
+  Nettolohn
+  pro Stunde
+  **CHF 37.00**
+
+  ..
+
+  Bruttolohn
+  pro Monat
+  **CHF ~6850**
+]
+
+Rate -- Deductions
+Deductions -- Salary
+@enduml
